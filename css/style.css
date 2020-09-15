@@ -1,5 +1,7 @@
 /* Hero оформление градиента и фото */
 .overlay {
+  margin: 0 auto;
+  background-color: var(--moz-decoration-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -29,7 +31,7 @@
   text-transform: uppercase;
 }
 
-/*  Герой Button */
+/*  Кнопка-героя Button */
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -46,15 +48,15 @@
   letter-spacing: 0.06em;
   text-decoration: none;
 }
+/* Модальное окно на кнопке заказать услугу*/
+
 .hero-title {
-  background-color: var(--moz-decoration-color);
   text-align: center;
 }
 /* Секция под героем без заголовка*/
 .decoration-icon {
   background-color: var(--animation-direction);
   display: flex;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -70,6 +72,29 @@
   padding-top: 94px;
 }
 /* Секция чем мы занимаемся*/
+
+/* Наложение текста на картинку*/
+.activ-content {
+  position: relative;
+}
+.embedded-text {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-bg-color);
+}
+
 .list {
   display: flex;
 }
@@ -218,9 +243,11 @@
 .clients:not(:last-child) {
   margin-right: 30px;
 }
+.clients {
+  width: 170px;
+}
 .clients-item {
   display: flex;
-  width: 170px;
   height: 90px;
   padding: 0;
   border-width: 1px;

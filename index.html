@@ -62,11 +62,19 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <a href="" class="button">Заказать услугу</a>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>какой-то текст</p>
+              <button data-modal-close>X</button>
+            </div>
+          </div>
         </div>
       </section>
-      <!--Преимущества сайта-->
 
+      <!--Преимущества сайта-->
       <section class="section-hero">
         <div class="container">
           <!--<h2 class="section-title">Наши преимуществ</h2>-->
@@ -129,31 +137,40 @@
           <h2 class="section-title-list">Чем мы занимаемся</h2>
           <ul class="info-list list">
             <li class="item">
-              <a href=""
-                ><img
-                  src="./images/img2.jpg"
-                  alt="Человек за компьютером"
-                  width="370"
-                />
-              </a>
+              <div class="activ-content">
+                <a href=""
+                  ><img
+                    src="./images/img2.jpg"
+                    alt="Человек за компьютером"
+                    width="370"
+                  />
+                  <h3 class="embedded-text">Деcктопные приложения</h3>
+                </a>
+              </div>
             </li>
             <li class="item">
-              <a href=""
-                ><img
-                  src="./images/img1.jpg"
-                  alt="Человек держит в руке телефон"
-                  width="370"
-                />
-              </a>
+              <div class="activ-content">
+                <a href=""
+                  ><img
+                    src="./images/img1.jpg"
+                    alt="Человек держит в руке телефон"
+                    width="370"
+                  />
+                  <h3 class="embedded-text">Мобильные приложения</h3>
+                </a>
+              </div>
             </li>
             <li class="item">
-              <a href=""
-                ><img
-                  src="./images/img3.jpg"
-                  alt="Человек держит в руке планшет"
-                  width="370"
-                />
-              </a>
+              <div class="activ-content">
+                <a href=""
+                  ><img
+                    src="./images/img3.jpg"
+                    alt="Человек держит в руке планшет"
+                    width="370"
+                  />
+                  <h3 class="embedded-text">Дизайнерские решения</h3>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -330,7 +347,7 @@
       <!--Наши партнеры-->
       <section class="section">
         <div class="container">
-          <h4 class="partner">Постоянные клиенты</h4>
+          <h2 class="partner">Постоянные клиенты</h2>
           <ul class="company">
             <li class="clients">
               <a class="clients-item" href="">
@@ -419,5 +436,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
