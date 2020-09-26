@@ -88,6 +88,20 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.link {
+  position: relative;
+}
+.current::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 button {
   font-family: inherit;
 }
