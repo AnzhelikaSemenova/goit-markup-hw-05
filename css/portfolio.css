@@ -152,5 +152,7 @@ a {
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--primary-bg-color);
 }
-.card:hover {
+.text-formatting:hover::after,
+.text-formatting:focus::after {
+  transform: translateY(100%);
 }
